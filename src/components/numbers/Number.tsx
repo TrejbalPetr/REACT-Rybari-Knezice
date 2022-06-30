@@ -1,6 +1,5 @@
 import React from 'react';
 import CountUp from 'react-countup';
-import { COLORS } from '../../colors';
 import "./numbers.css"
 
 type Props = {
