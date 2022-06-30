@@ -1,0 +1,30 @@
+.MainHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: auto;
+}
+
+.Intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding: 0 10%;
+}
+
+.Header h1 {
+    color: var(--white);
+}
+
+.Header p {
+    color: var(--white);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
