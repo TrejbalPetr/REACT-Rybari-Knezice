@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Header, About, Catches, Contact, Footer } from './components';
+import { Navbar, Header, Squares, About, Numbers, Catches, Contact, Footer } from './components';
 import './App.css';
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
         <Navbar />
         <Header />
       </div>
+      <Squares />
       <About />
+      <Numbers />
       <Catches />
       <Contact />
       <Footer />

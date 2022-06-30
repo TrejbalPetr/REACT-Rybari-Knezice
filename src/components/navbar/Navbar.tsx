@@ -18,28 +18,28 @@ const Navbar = () => {
         </div>
       </div>  
       <div className='Menu'>
-        <h4><a href="#home"><img className="homeIcon" src={home} alt="home" /></a></h4>
+      <h4><a href="#home"><img src={home} alt="home" /></a></h4>
         <h4><a href="#about">O klubu</a></h4>
         <h4><a href="#catches">Úlovky</a></h4>
         <h4><a href="#actions">Akce</a></h4>
         <h4><a href="#forMembers">Pro členy</a></h4>
         <h4><a href="#contact">Kontakty</a></h4>
-        <h4><a href="#login"><img className="homeIcon" src={admin} alt="admin" /></a></h4>
+        <h4 className="homeIcon"><a href="#login"><img src={admin} alt="admin" /></a></h4>
       </div>
       <div className='MenuMobile'>
         {toggleMenu
           ? <RiCloseLine color="#FFF" size={27} onClick={() => setToggleMenu(false)} />
           : <RiMenu3Line color="#FFF" size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu && (
-        <div className="MenuMobileContainer MenuScaleUp">
+        <div className="MenuMobileContainer scale-up-center">
           <div className="MenuMobileText">
-            <h4><a href="#home"><img className="homeIcon" src={home} alt="home" /></a></h4>
+            <h4><a href="#home"><img src={home} alt="home" /></a></h4>
             <h4><a href="#about">O klubu</a></h4>
             <h4><a href="#catches">Úlovky</a></h4>
             <h4><a href="#actions">Akce</a></h4>
             <h4><a href="#forMembers">Pro členy</a></h4>
             <h4><a href="#contact">Kontakty</a></h4>
-            <h4><a href="#login"><img className="homeIcon" src={admin} alt="admin" /></a></h4>
+            <h4><a href="#login"><img src={admin} alt="admin" /></a></h4>
           </div>
         </div>
         )}

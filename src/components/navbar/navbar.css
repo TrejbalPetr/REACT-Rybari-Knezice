@@ -15,7 +15,11 @@
     padding: 1rem;
 }
 
-.LogoText, .LogoImg {
+.Logo img {
+    height: 80px;
+}
+
+.LogoText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,30 +29,37 @@
 .Menu {
     display: flex;
     flex-direction: row;
-    padding-right: 2rem;
 }
 
 .Menu img {
     height: 27.5px;
 }
 
-.Menu h4 {
+.Menu h4{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0rem 1rem;
 }
 
-/* RESPONZIVITA */
+.homeIcon {
+    margin-right: -1rem;
+}
+/* MOBILNI MENU */
 
 .MenuMobile {
     margin-left: 1rem;
 
     display: none;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.MenuMobileText h4{
+.MenuMobile img {
+    height: 27.5px;
+}
+
+.MenuMobileText h4 {
     padding: 10px;
 }
 
@@ -66,8 +77,8 @@
     background: var(--blue);
     padding: 2rem;
     position: absolute;
-    right: 0;
-    top: 40px;
+    right: 5%;
+    top: 60px;
     margin-top: 1rem;
     min-width: 210px;
     border-radius: 5px;
@@ -77,6 +88,9 @@
 .MenuMobileContainer p {
     margin: 1rem 0;
 }
+
+/* RESPONZIVITA */
+
 @media screen and (max-width: 1121px) {
     .Navbar {
         padding: 0rem 5%;
@@ -85,7 +99,7 @@
 
 @media screen and (max-width: 1050px) {
     .Navbar {
-        padding: 2rem 4rem;
+        padding: 0rem 4rem;
     }
 
     .Menu {
@@ -99,17 +113,25 @@
 
 @media screen and (max-width: 700px) {
     .Navbar {
-        padding: 2rem 4rem;
+        padding: 0rem 4rem;
+    }
+
+    .LogoText h4{
+        font-size: 24px;
     }
 }
 
 @media screen and (max-width: 550px) {
     .Navbar {
-        padding: 2rem;
+        padding: 0rem 2rem;
     }
 
-    .MenuMobileContainer {
-        top: 20px;
+    .Logo img {
+        height: 60px;
+    }
+
+    .LogoText h4{
+        font-size: 20px;
     }
 }
 

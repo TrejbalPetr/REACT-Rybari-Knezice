@@ -45,6 +45,16 @@ button {
     border: 0;
 }
 
+.BtnTransparent {
+    background-color: transparent;
+    color: var(--white);
+}
+
+.BtnGreen {
+    background-color: var(--green);
+    color: var(--blue);
+}
+
 .foto_bg{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("./images/Background.png");
     min-height: 90vh;
@@ -63,31 +73,32 @@ button {
 }
 
 /* ANIMACE */
-.slide-left {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-@-webkit-keyframes slide-left {
+ @-webkit-keyframes scale-up-center {
     0% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
     }
     100% {
-        -webkit-transform: translateX(-100px);
-                transform: translateX(-100px);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
-}
-@keyframes slide-left {
+  }
+  @keyframes scale-up-center {
     0% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
     }
     100% {
-        -webkit-transform: translateX(-100px);
-                transform: translateX(-100px);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
-}
+  }
+  
   
 /* RESPONZIVITA */
 
