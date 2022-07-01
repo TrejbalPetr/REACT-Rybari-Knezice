@@ -1,5 +1,5 @@
 .Catches {
-    background-image: linear-gradient(rgba(7, 36, 65, 0.95),rgba(7, 36, 65, 0.95)),url("../../images/Catches.png");
+    background-image: linear-gradient(rgba(7, 36, 65, 0.90),rgba(7, 36, 65, 0.90)),url("../../images/Catches.png");
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -20,21 +20,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0 10%;
 }
 
 .SliderFish {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 1rem;
 }
 
 .Card {
     display: flex;
+    white-space: nowrap;
     flex-direction: row;
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 20px;
+    width: 750px;
+    transition: ease 1s;
 }
 
 .CardText {
@@ -94,9 +99,9 @@
     display: flex;
     flex-direction: column;
     width: 500px;
-    height: 280px;
     margin: 0 auto;
     height: 325px;
+    max-width: 450px;
 }
 
 .Dots {
@@ -111,4 +116,138 @@
     margin: 0 3px;
     cursor: pointer;
     font-size: 25px;
+    color: var(--greyText);
+}
+
+.CatchesDown {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem 10%;
+}
+
+.CatchesDown h4 {
+    color: var(--greyText);
+    padding: 1rem;
+}
+
+.CatchesDown button {
+    background-color: var(--green);
+    color: var(--blue);
+}
+
+.Active {
+    color: var(--green);
+}
+
+@media screen and (max-width: 1100px) {
+    .Slider {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Card {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        width: auto;
+    }
+
+    .CardText {
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+
+    .Img {
+        margin: 0;
+    }
+
+    .Measures {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .Catches h1 {
+        font-size: 56px;
+    }
+
+    .Img {
+        width: 350px;
+        height: 262.5px;
+    }
+    .Slider {
+        padding: 0;
+    }
+
+    .CatchesDown{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Catches h1 {
+        font-size: 37px;
+    }
+
+    .FishText h2 {
+        font-size: 32px;
+    }
+
+    .Measures div h2{
+        font-size: 55px;
+    }
+
+    .Measures div h4 {
+        font-size: 28px;
+        padding-top: 22px;
+        line-height: 100%;
+    }
+
+    .Img {
+        width: 250px;
+        height: 187.5px;
+    }
+
+    .CatchesDown h4, .CatchesDown button{
+        font-size: 24px;
+    }
+
+    .SliderFish img{
+        height: 40px;
+    }
+
+    .CatchesDown {
+        padding: 0.5rem 5%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .CatchesDown h4, .CatchesDown button{
+        font-size: 18px;
+    }
+
+    .Measures div h2{
+        font-size: 40px;
+    }
+
+    .Measures div h4 {
+        font-size: 18px;
+        padding-top: 18px;
+        line-height: 100%;
+    }
+
+    .FishText p {
+        font-size: 14px;
+    }
+
+    .FishText h2 {
+        font-size: 24px;
+    }
 }

@@ -12,7 +12,7 @@ function App() {
       <Squares />
       <About />
       <Numbers />
-      <Catches />
+      <Catches /> 
       <Contact />
       <Footer />
     </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ChevronLeft from "../../images/chevron-left.svg";
 import ChevronRight from "../../images/chevron-right.svg";
 import { COLORS } from "../../colors";
@@ -7,28 +7,40 @@ import "./catches.css";
 
 const Slider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
+
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
-  let DotColor = COLORS.white;
-  
+
+  useEffect (() => {
+        const slideInterval = setInterval(() => {
+            const isLastSlide = currentIndex === slides.length - 1;
+            const newIndex = isLastSlide ? 0 : currentIndex + 1;
+            setCurrentIndex(newIndex);         
+        }, 3000)
+        
+        return () => clearInterval(slideInterval)
+  })
+
 
 
   return (
     <div className="Slider">
         <div className="SliderFish">
             <img src={ChevronLeft} alt="Chevron Left" onClick={goToPrevious}/>
-            <div className='Card'>
+            <div className="Card">
                 <div className="CardText">
                     <div className='FishText'>
                         <h2 style={{color: COLORS.white}}>{slides[currentIndex].title}</h2>
@@ -55,8 +67,8 @@ const Slider = ({ slides }) => {
         </div>
         <div className="Dots">
             {slides.map((slide, slideIndex) => (
-                <div className="DotStyle" style={{color: DotColor}} key={slideIndex} onClick={() => goToSlide(slideIndex)}>
-                    ● {slideIndex}
+                <div className={`DotStyle${slideIndex === currentIndex ? " Active": ""}`} key={slideIndex} onClick={() => goToSlide(slideIndex)}>
+                    ●
                 </div>
             ))}
         </div>

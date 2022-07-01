@@ -39,9 +39,13 @@ const Catches = () => {
 
 
   return (
-    <div className='Catches'>
+    <div className='Catches' id='catches'>
       <h1>Úlovky - Osecký rybník</h1>
       <Slider slides={slides}/>
+      <div className='CatchesDown'>
+        <h4>Také jste u nás  chytili nějaký pěkný úlovek?</h4>
+        <button>Pochlubte se!</button>
+      </div>
     </div>
   )
 }
