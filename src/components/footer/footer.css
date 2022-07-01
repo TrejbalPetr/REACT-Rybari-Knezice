@@ -1,0 +1,72 @@
+.Footer {
+    background-color: var(--color-footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FooterText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8% 10%;
+}
+
+.FooterText img {
+    height: 160px;
+}
+
+.FooterColumns h2 {
+    color: var(--white);
+    border-bottom: 1px solid var(--green);
+    font-weight: 400;
+}
+
+.FooterColumns a,  .FooterColumns div{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0;
+}
+
+.FooterColumns a img, .FooterColumns div img{
+    height: 22px;
+}
+
+.FooterColumns a p, .FooterColumns div p {
+    color: var(--white);
+    height: 22px;
+}
+
+.Logo {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.LogoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 0.5rem;
+    color: var(--white);
+}
+
+.FooterCopy {
+    color: var(--greyText);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 3rem;
+    padding: 1rem;
+    border-top: 1px solid var(--greyText);
+}
+
+.FooterCopy p {
+    font-size: 14px;
+}
+
+.LogoImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

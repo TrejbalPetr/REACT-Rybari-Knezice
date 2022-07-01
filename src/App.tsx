@@ -14,7 +14,7 @@ function App() {
       <Numbers />
       <Catches /> 
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
