@@ -9,17 +9,26 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 8% 10%;
+    padding: 5% 10%;
 }
 
-.FooterText img {
-    height: 160px;
+.MapAlign {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MapImg {
+    max-width: 100%;
 }
 
 .FooterColumns h2 {
     color: var(--white);
     border-bottom: 1px solid var(--green);
     font-weight: 400;
+    display: flex;
+    width:fit-content;
 }
 
 .FooterColumns a,  .FooterColumns div{
@@ -37,7 +46,7 @@
     height: 22px;
 }
 
-.Logo {
+.FooterLogo{
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -67,4 +76,93 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .FooterColumns h2 {
+        font-size: 36px;
+    }
+
+    .FooterColumns p, .FooterCopy p{
+        font-size: 14px;
+    }
+
+    .FooterColumns a img, .FooterColumns div img{
+        height: 14px;
+    }
+
+    .LogoImg Img{
+        width: 60px;
+    }
+
+    .LogoText h4{
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .FooterColumns h2 {
+        font-size: 22px;
+    }
+
+    .FooterColumns p, .FooterCopy p{
+        font-size: 12px;
+    }
+
+    .FooterColumns a img, .FooterColumns div img{
+        height: 12px;
+    }
+
+    .LogoImg Img{
+        width: 50px;
+    }
+
+    .LogoText h4{
+        font-size: 18px;
+    }
+
+    .FooterText {
+        padding: 5% 5%;
+    }
+
+}
+
+@media screen and (max-width: 710px) {
+    .FooterLogo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FooterLogo .LogoText h4{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .FooterLogo{
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 0;
+    }
+
+    .FooterLogo .LogoText h4{
+        text-align: left;
+    }
+
+    .FooterText {
+        flex-direction: column;
+        padding: 5% 15%;
+    }
+
+    .FooterColumns {
+        padding-bottom: 2rem;
+    }
+
+    .MapAlign {
+        max-width: 100%;
+        padding-bottom: 5%;
+    }
 }

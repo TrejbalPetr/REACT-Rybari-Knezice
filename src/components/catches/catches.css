@@ -116,7 +116,7 @@
     margin: 0 3px;
     cursor: pointer;
     font-size: 25px;
-    color: var(--greyText);
+    color: var(--lightGreyText);
 }
 
 .CatchesDown {
@@ -128,7 +128,7 @@
 }
 
 .CatchesDown h4 {
-    color: var(--greyText);
+    color: var(--lightGreyText);
     padding: 1rem;
 }
 

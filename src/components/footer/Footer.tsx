@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='Footer'>
       <div className='FooterText'>
-        <div className='Logo'>
+        <div className='FooterLogo'>
           <div className='LogoImg'>
             <img src={logo} alt="logo" />
           </div>
@@ -51,7 +51,9 @@ const Footer = () => {
             <p>rybari.knezice@seznam.cz</p>
           </div>
         </div>
-        <img src={CZ} alt="CZ map" />
+        <div className='MapAlign'>
+          <img className='MapImg' src={CZ} alt="CZ map" />
+        </div>  
       </div>
       <div className='FooterCopy'>
         <p>Oficiální stránky klubu sportovních rybářů Kněžice © 2022</p>
@@ -60,4 +62,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

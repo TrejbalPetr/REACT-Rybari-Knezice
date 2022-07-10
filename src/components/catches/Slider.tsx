@@ -44,11 +44,11 @@ const Slider = ({ slides }) => {
                 <div className="CardText">
                     <div className='FishText'>
                         <h2 style={{color: COLORS.white}}>{slides[currentIndex].title}</h2>
-                        <p style={{color: COLORS.greyText}}>{slides[currentIndex].name}</p>
-                        <p style={{color: COLORS.greyText}}>{slides[currentIndex].date}</p>
-                        <p style={{paddingBottom: "10px", color: COLORS.greyText}}>{slides[currentIndex].time}</p>
-                        <p style={{color: COLORS.greyText}}>Technika: {slides[currentIndex].tech}</p>
-                        <p style={{color: COLORS.greyText}}>Návnada: {slides[currentIndex].bait}</p>
+                        <p style={{color: COLORS.lightGreyText}}>{slides[currentIndex].name}</p>
+                        <p style={{color: COLORS.lightGreyText}}>{slides[currentIndex].date}</p>
+                        <p style={{paddingBottom: "10px", color: COLORS.lightGreyText}}>{slides[currentIndex].time}</p>
+                        <p style={{color: COLORS.lightGreyText}}>Technika: {slides[currentIndex].tech}</p>
+                        <p style={{color: COLORS.lightGreyText}}>Návnada: {slides[currentIndex].bait}</p>
                     </div>
                     <div className='Measures'>
                         <div>

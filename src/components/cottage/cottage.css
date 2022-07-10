@@ -1,0 +1,36 @@
+.Cottage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+.Cottage h1 {
+    color: var(--blue);
+}
+
+.CottageLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+}
+
+.CottageLeftImg Img{
+    display: flex;
+    width: 100%;
+}
+
+.CottageLeftText {
+    background-color: var(--white);
+    box-shadow: 3px 3px 10px 3px var(--greyText);
+    padding: 2rem;
+    width: 80%;
+    justify-content: center;
+    margin-top: -3rem;
+}
+
+.CottageLeft button {
+    margin-right: -80%;
+    margin-top: -1rem;
+}

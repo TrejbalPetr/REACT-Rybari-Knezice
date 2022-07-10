@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Header, Squares, About, Numbers, Catches, Contact, Footer } from './components';
+import { Navbar, Header, Squares, About, Numbers, Members, Catches, Contact, Cottage, Actions, Footer } from './components';
 import './App.css';
 
 function App() {
@@ -12,7 +12,10 @@ function App() {
       <Squares />
       <About />
       <Numbers />
+      <Members />
       <Catches /> 
+      <Cottage />
+      <Actions />
       <Contact />
       <Footer />
     </div>
