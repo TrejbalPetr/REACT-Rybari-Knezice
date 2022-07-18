@@ -8,4 +8,4 @@ export { default as Contact } from "./contact/Contact";
 export { default as Squares } from "./squares/Squares";
 export { default as Numbers } from "./numbers/Numbers";
 export { default as Cottage } from "./cottage/Cottage";
-export { default as Actions } from "./actions/Actions";
+export { default as Events } from "./events/Events";

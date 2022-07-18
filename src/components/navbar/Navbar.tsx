@@ -21,7 +21,7 @@ const Navbar = () => {
       <h4><a href="#home"><img src={home} alt="home" /></a></h4>
         <h4><a href="#about">O klubu</a></h4>
         <h4><a href="#catches">Úlovky</a></h4>
-        <h4><a href="#actions">Akce</a></h4>
+        <h4><a href="#events">Události</a></h4>
         <h4><a href="#forMembers">Pro členy</a></h4>
         <h4><a href="#contact">Kontakty</a></h4>
         <h4 className="homeIcon"><a href="#login"><img src={admin} alt="admin" /></a></h4>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <h4><a href="#home"><img src={home} alt="home" /></a></h4>
             <h4><a href="#about">O klubu</a></h4>
             <h4><a href="#catches">Úlovky</a></h4>
-            <h4><a href="#actions">Akce</a></h4>
+            <h4><a href="#events">Události</a></h4>
             <h4><a href="#forMembers">Pro členy</a></h4>
             <h4><a href="#contact">Kontakty</a></h4>
             <h4><a href="#login"><img src={admin} alt="admin" /></a></h4>

@@ -1,13 +1,41 @@
 import React, { useState } from 'react'
-import CottageImg from "../../images/Cottage.jpg"
-// import Callendar from "../../images/Callendar.png"
-import 'react-calendar/dist/Calendar.css';
-
 import Calendar from 'react-calendar'
-import "./cottage.css"
+import moment from 'moment'
+
+import CottageImg from "../../images/Cottage.jpg"
+
+import 'react-calendar/dist/Calendar.css';
+import "./cottage.css" /*CSS kalendáře v Calendar.css */
+
+
 
 const Cottage = () => {
-  const [value, onChange] = useState(new Date());
+  const [dateState, setDateState] = useState(new Date());
+
+  const [fullDates, setFullDates] = useState([
+    {date: new Date('2022-07-02'), text: "Olík"},
+    {date: new Date('2022-07-03'), text: "Kamča"},
+    {date: new Date('2022-07-04'), text: "Hanička"}
+  ]);
+
+  let vybranyDen: String = "---"
+  let textColor: string = "#009900"
+  let allFullDates: Date[] = [];
+
+  for(let i = 0; i < fullDates.length; i++){
+    allFullDates.push(fullDates[i].date);
+  }
+
+  for(let i = 0; i < fullDates.length; i++){
+    if(fullDates[i].date.getFullYear() === dateState.getFullYear() && fullDates[i].date.getMonth() === dateState.getMonth() && fullDates[i].date.getDate() === dateState.getDate()){
+      vybranyDen = fullDates[i].text;
+      textColor = "#ff0000";
+      break;
+    }else{
+      vybranyDen = "---";
+      textColor = "#009900";
+    }
+  }
 
   return (
     <div className='Cottage'>
@@ -24,10 +52,16 @@ const Cottage = () => {
         </button>
       </div>
       <div className='CottageRight'>
-        <div className='CottageRightImg'>
-          {/* <img src={Callendar} alt="Kalendář" /> */}
-          <Calendar onChange={onChange} value={value} />
-        </div>
+        <Calendar onChange={setDateState} value={dateState} 
+          tileClassName = {({ date, view }) => {
+            if((view === 'month') && allFullDates.some(disabledDate => date.getFullYear() === disabledDate.getFullYear() && date.getMonth() === disabledDate.getMonth() && date.getDate() === disabledDate.getDate())){
+              return 'CottageFull';
+            }
+          }}
+        />
+
+        <p className='CalendarResult'>Dne <b>{moment(dateState).format('DD. MM. YYYY')}</b> je chalupa <b style={{color: textColor}}>{vybranyDen !== "---" ? "obsazená" : "volná"}</b>.</p>
+        <p>(Pozn.: {vybranyDen})</p>
       </div>
     </div>
   )
