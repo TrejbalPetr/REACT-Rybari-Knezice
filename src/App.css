@@ -21,7 +21,8 @@ p {
 }
 
 h1 {
-    font-size: 67.1px;
+    /* font-size: 67.1px; */
+    font-size: clamp(2.313rem, 2vw + 1.75rem, 4.25rem);
     line-height: 100%;
     font-weight: 400;
     font-family: var(--font-titles);
