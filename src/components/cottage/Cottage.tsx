@@ -12,7 +12,7 @@ import "./cottage.css" /*CSS kalendáře v Calendar.css */
 const Cottage = () => {
   const [dateState, setDateState] = useState(new Date());
 
-  const [fullDates, setFullDates] = useState([
+  const [fullDates] = useState([
     {date: new Date('2022-07-02'), text: "Olík"},
     {date: new Date('2022-07-03'), text: "Kamča"},
     {date: new Date('2022-07-04'), text: "Hanička"}
