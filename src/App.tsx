@@ -13,9 +13,9 @@ function App() {
       <About />
       <Numbers />
       <Members />
+      <Events />
       <Catches /> 
       <Cottage />
-      <Events />
       <Contact />
       <Footer />
     </div>

@@ -1,26 +1,38 @@
 import React from 'react'
 import "./events.css"
-import Competition from "../../images/Zavody.jpg"
-import Band from "../../images/Band.jpg"
+import Event from './Event'
+// import Competition from "../../images/Zavody.jpg"
+// import Band from "../../images/Band.jpg"
+import Foto1 from "../../images/ProfileFoto.png"
+
+
+const DataEvents = [
+  { img: Foto1, 
+    title: "Závody",
+    date: "",
+    text: "Klub sportovních rybářů Kněžice každoročně pořádá několik závodů. Prvního května se tradičně pořádají závody dětské, dále 24hodinový memoriál Františka Hlaváčka a Františka Melišíka, který probíhá okolo poloviny června. Pro velký zájem v posledních letech pořádány zářiové 12hodinové závody dospělých.", 
+    type: 1,
+  },
+  { img: Foto1, 
+    title: "Malý drobný band", 
+    date: "30. 7. 2022",
+    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Phasellus et lorem id felis nonummy placerat.", 
+    type: 2,
+  },
+  { img: Foto1, 
+    title: "Nějaká další akce", 
+    date: "XX. XX. XXXX",
+    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Phasellus et lorem id felis nonummy placerat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est.", 
+    type: 2,
+  },
+];
 
 const Events = () => {
   return (
-    <div>
-      <div className='EventsMain' id='events'>
-        <h1>Události</h1>
-      </div>
-      <div className='Events'>
-        <div className='EventLeft'>
-          <img src={Competition} alt="Závody" />
-          <h2>Závody</h2>
-          <p>Klub sportovních rybářů Kněžice každoročně pořádá několik závodů. Prvního května se tradičně pořádají závody dětské, dále 24hodinový memoriál Františka Hlaváčka a Františka Melišíka, který probíhá okolo poloviny června. Pro velký zájem v posledních letech jsou ještě pořádány zářiové 12hodinové závody dospělých.</p>
-        </div>
-        <div className='EventsRight'>
-          <img src={Band} alt="Malý drobný band" />
-          <h2>Malý Drobný Band</h2>
-          <p>30.7. 2022 se uskuteční tradiční letní akce u Oseckého rybníka, kde pro poslech zachraje skupina Malý Drobný Band. Občerstvení zajištěno.</p>
-          <h2>událost 2</h2>
-        </div>
+    <div className='Events' id='events'>
+      <h1>Události</h1>
+      <div className='EventsEvent'>
+        {DataEvents.map((DataEvent) => ( <Event Data={DataEvent} /> ))}
       </div>
     </div>
   )

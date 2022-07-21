@@ -1,41 +1,67 @@
-.EventsMain h1{
+.Events h1{
     height: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 1px solid var(--blue);
-    margin-bottom: 50px;
+    /* border-top: 1px solid var(--blue); */
+    margin-top: 50px;
     color: var(--blue);
     padding: 0 10%;
 }
 
-.Events {
+.EventsEvent {
+    padding: 0 10%;
     display: flex;
     flex-direction: row;
-    padding: 0% 10%;
-    height: fit-content;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 5%;
 }
 
-.EventLeft {
-    flex: 1;
+.Event {
     display: flex;
-    flex-direction: column;
-    padding-right: 1rem;
-}
-
-.EventLeft img{
-    width: 100%;
-    height: 80%;
-}
-
-.EventsRight {
     flex: 1;
-    display: flex;
     flex-direction: column;
-    padding-left: 1rem;
 }
 
-.EventsRight img{
-    width: 100%;
-    max-width: 400px;
+.TypeOne {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background: linear-gradient(128deg, rgba(1,20,37,1) 0%, rgba(1,69,114,1) 100%);
+    color: var(--white);
+}
+
+.TypeOne h2 {
+    color: var(--white);
+}
+
+.TypeOne small {
+    color: var(--white);
+}
+
+.TypeTwo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background: transparent;
+}
+
+.TypeTwo small {
+    color: var(--greyText);
+}
+
+.TypeOne h2, .TypeTwo h2 {
+    padding: 0.5rem 1rem 0 1rem;
+}
+
+.TypeOne small, .TypeTwo small {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.TypeOne img, .TypeTwo img {
+    max-width: 100%;
+    max-height: 100%;
+    flex: 0 0 auto;
+    object-fit: scale-down;
 }

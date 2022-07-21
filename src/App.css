@@ -20,6 +20,12 @@ p {
     font-family: var(--font-text);
 }
 
+small {
+    font-size: 14.08px;
+    font-family: var(--font-text);
+    color: var(--greyText);
+}
+
 h1 {
     /* font-size: 67.1px; */
     font-size: clamp(2.313rem, 2vw + 1.75rem, 4.25rem);
