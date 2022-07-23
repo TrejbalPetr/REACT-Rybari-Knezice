@@ -41,7 +41,7 @@ const Cottage = () => {
   }
 
   return (
-    <div className='Cottage'>
+    <div className='Cottage' id='cottage'>
       <div className='CottageLeft'>
         <div className='CottageLeftImg'>
           <img src={CottageImg} alt="Chalupa" />

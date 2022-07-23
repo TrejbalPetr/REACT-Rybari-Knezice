@@ -44,7 +44,7 @@ const Catches = () => {
       <Slider slides={slides}/>
       <div className='CatchesDown'>
         <h4>Také jste u nás  chytili nějaký pěkný úlovek?</h4>
-        <button>Pochlubte se!</button>
+        <button className='BtnGreen'>Pochlubte se!</button>
       </div>
     </div>
   )

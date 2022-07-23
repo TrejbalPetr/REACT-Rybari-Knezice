@@ -49,6 +49,7 @@
     width: auto;
     box-shadow: 3px 3px 10px 3px var(--greyText);
     border: 0;
+    max-width: 500px;
 }
 
 .react-calendar__tile--now {

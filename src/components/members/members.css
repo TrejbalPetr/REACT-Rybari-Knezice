@@ -1,6 +1,8 @@
 .Members {
     background-image: linear-gradient(rgba(7, 36, 65, 0.80),rgba(7, 36, 65, 0.80)),url("../../images/Catches.png");
-    background-position: center center
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Members h1{

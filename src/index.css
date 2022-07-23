@@ -4,8 +4,11 @@
   --font-titles: "Teko", sans-serif;
   --font-text: "Roboto", sans-serif;
 
+  --paddingLeftRight: 10%;
+
   --blue: #014572;
   --green: #B5F200;
+  --darkGreen: #9BCF00;
   --white: #FFFFFF;
   --greyText: #666666;
   --lightGreyText: #999999;

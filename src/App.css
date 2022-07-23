@@ -55,6 +55,7 @@ button {
     border: 0;
     border-radius: 0 15px 0 15px;
     font-family: var(--font-titles);
+    cursor: pointer;
 }
 
 .BtnTransparent {
@@ -62,9 +63,18 @@ button {
     color: var(--white);
 }
 
+.BtnTransparent:hover {
+    color: var(--green);
+}
+
 .BtnGreen {
     background-color: var(--green);
     color: var(--blue);
+}
+
+.BtnGreen:hover{
+    background-color: var(--darkGreen);
+    color: var(--darkBlue);
 }
 
 

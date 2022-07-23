@@ -6,7 +6,7 @@ import ChevronRight from "../../images/chevron-right.svg";
 
 const Footer = () => {
   return (
-    <div className='Footer'>
+    <div className='Footer' id='contact'>
       <div className='FooterText'>
         <div className='FooterLogo'>
           <div className='LogoImg'>

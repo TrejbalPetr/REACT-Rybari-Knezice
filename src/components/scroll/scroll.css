@@ -1,0 +1,36 @@
+.Scroll {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.Scroll button {
+    background-color: var(--darkBlue);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    margin: 0;
+    padding: 0;
+}
+
+.Scroll button:hover {
+    background-color: var(--color-footer);
+}
+
+.Scroll button img {
+    align-items: center;
+    padding-top: 9px;
+}
+
+.opacity-0{
+    opacity: 0;
+}
+
+.opacity-100{
+    opacity: 1;
+}

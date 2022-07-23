@@ -6,15 +6,15 @@
     /* border-top: 1px solid var(--blue); */
     margin-top: 50px;
     color: var(--blue);
-    padding: 0 10%;
+    padding: 0 var(--paddingLeftRight);
 }
 
 .EventsEvent {
-    padding: 0 10%;
+    padding: 0 var(--paddingLeftRight);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 3%;
     padding-bottom: 5%;
 }
 
@@ -28,7 +28,9 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    justify-content: space-between;
     background: linear-gradient(128deg, rgba(1,20,37,1) 0%, rgba(1,69,114,1) 100%);
+    box-shadow: 3px 3px 10px 3px var(--lightGreyText);
     color: var(--white);
 }
 
@@ -37,26 +39,29 @@
 }
 
 .TypeOne small {
-    color: var(--white);
+    color: var(--green);
 }
 
 .TypeTwo {
     display: flex;
     flex: 1;
     flex-direction: column;
+    justify-content: space-between;
     background: transparent;
+    box-shadow: 3px 3px 10px 3px var(--lightGreyText);
 }
 
-.TypeTwo small {
+.TypeTwo p {
     color: var(--greyText);
 }
 
-.TypeOne h2, .TypeTwo h2 {
+.TypeOne div h2, .TypeTwo div h2 {
     padding: 0.5rem 1rem 0 1rem;
 }
 
-.TypeOne small, .TypeTwo small {
-    padding: 0 1rem 1rem 1rem;
+.EventText {
+    font-size: 14.08px;
+    margin: 0 1rem 1rem 1rem;
 }
 
 .TypeOne img, .TypeTwo img {
@@ -64,4 +69,44 @@
     max-height: 100%;
     flex: 0 0 auto;
     object-fit: scale-down;
+}
+
+.EventDate {
+    text-align: right;
+    display: inline-block;
+    align-self: flex-end;
+    padding: 0 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .TypeOne div h2, .TypeTwo div h2 {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .EventsEvent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TypeOne, .TypeTwo {
+        margin-bottom: 5%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .AboutText h1{
+        font-size: 37px;
+    }
+
+    .AboutText h2{
+        font-size: 22px;
+    }
+
+    .AboutText p{
+        font-size: 14px;
+    }
+
 }

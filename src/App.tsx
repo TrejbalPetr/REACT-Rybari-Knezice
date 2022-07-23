@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Header, Squares, About, Numbers, Members, Catches, Contact, Cottage, Events, Footer } from './components';
+import { Navbar, Scroll, Header, Squares, About, Numbers, Members, Catches, Cottage, Events, Footer } from './components';
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <div className='foto_bg'>
         <Navbar />
         <Header />
+        <Scroll />
       </div>
       <Squares />
       <About />
@@ -16,7 +17,7 @@ function App() {
       <Events />
       <Catches /> 
       <Cottage />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
