@@ -10,3 +10,4 @@ export { default as Numbers } from "./numbers/Numbers";
 export { default as Cottage } from "./cottage/Cottage";
 export { default as Events } from "./events/Events";
 export { default as Scroll } from "./scroll/Scroll";
+export { default as Popup } from "./popup/Popup";

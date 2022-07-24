@@ -1,15 +1,16 @@
 .Squares {
     display: flex;
     flex-direction: row;
-    position: relative;
+    /* position: relative; */
     margin-top: -100px;
     padding-left: 10%;
     padding-bottom: 100px;
     border-bottom: 1px solid var(--blue);
+    z-index:0;
   }
 
   .SquareButton {
-    position: relative;
+    /* position: relative; */
     width: 250px;
     height: 200px;
     text-align: left;
